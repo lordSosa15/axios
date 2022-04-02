@@ -1,0 +1,40 @@
+<div class='bg-light h-100'>
+  <div class='container-lg my-3 text-center'>
+    <h1 class='display-1'>Axios</h1>
+    <hr class='mb-5' />
+    <div class='row'>
+      <div class='col'>
+        <a href='/get-all-todos' class='btn btn-success'>Get All Todos</a>
+      </div>
+
+      <div class='col-4'>
+        <form action='/add-todos/65' method='GET'>
+          <div class='form-group'>
+            <label for='todo'>Todo</label>
+            <input
+              type='text'
+              class='form-control'
+              id='todo'
+              placeholder='Todo'
+              name='todo'
+            />
+            <div class='form-check'>
+              <label class='form-check-label' for='completed'>Completed</label>
+              <input
+                type='checkbox'
+                class='form-check-input'
+                id='completed'
+                name='completed'
+              />
+            </div>
+            <button type='submit' class='btn btn-primary'>Add Todos</button>
+          </div>
+        </form>
+      </div>
+      <div class='col'><a href='/update-todos' class='btn btn-warning'>Update
+          Todos</a></div>
+      <div class='col'><a href='/delete-todos' class='btn btn-danger'>Delete
+          Todos</a></div>
+    </div>
+  </div>
+</div>
