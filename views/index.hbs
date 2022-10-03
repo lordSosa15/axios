@@ -7,8 +7,16 @@
         <a href='/get-all-todos' class='btn btn-success'>Get All Todos</a>
       </div>
 
+      <div class='col'>
+        <a href='/get-random-quote' class='btn btn-success'>Get Random Quote</a>
+      </div>
+
+      <div class='col'>
+        <a href='/get-todo-quotes' class='btn btn-success'>Get Todo & Quote</a>
+      </div>
+
       <div class='col-4'>
-        <form action='/add-todos/65' method='GET'>
+        <form action='/add-todos/65' method='POST'>
           <div class='form-group'>
             <label for='todo'>Todo</label>
             <input
@@ -36,5 +44,8 @@
       <div class='col'><a href='/delete-todos' class='btn btn-danger'>Delete
           Todos</a></div>
     </div>
+    {{#if quote}}
+      <div class='display-3'>{{quote}}</div>
+    {{/if}}
   </div>
 </div>
